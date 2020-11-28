@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Latitude Analysis</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f74a92880b.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #e8ffff;">
+
+<nav>        
+    <div class="header">
+        <a href="index.html" class="logo">Exploring the Weather</a>
+        <ul class="navbar nav-pills justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="index.html">
+                    <span class="text">Home</span>
+                    <span class="fas fa-home"></span>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="text">Plots</span>
+                    <span class="far fa-chart-bar"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="temp.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity Percentage</a>
+                    <a class="dropdown-item" href="clouds.html">Cloud Percentage</a>
+                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    <a class="dropdown-item" href="moreplots.html">More Plots</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="compare.html">
+                    <span class="text">Comparisons</span>
+                    <span class="fas fa-compress-arrows-alt"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">
+                    <span class="text">Data</span>
+                    <span class="fas fa-table"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">     
+    <div class="row">
+        <div class="mx-auto">
+            <h1>Analyzing Weather by Latitude</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 md-12 col-sm-12">
+            <div class="short-div">
+                <a href="heatmap.html">
+                <img style="padding: 50px" class="resize center" src="../Images/HeatMap.png" alt="Heat Map"></a>
+            </div>
+            <div class="short-div">
+                <h3>Summary</h3>
+                <div class="jumbotron">
+                <p>
+                    The purpose of this project is to anaylze weather data from cities all over the world to determine different trends based on latitude.
+                    The four trends being looked at are temperature, humidity percentage, cloud percentage and wind speeds. To do this I used Python libraries 
+                    and OpenWeather, to generate a random list of cities and find current weather data for cities.
+                </p>
+                <p>
+                    The image above is a global heat map that shows where all the cities that were queried through OpenWeather.  Using the information gathered,
+                    (a complete table of this data can be found on the "Data <span class="fas fa-table"></span>" page) I generated a series of graphs to display 
+                    how weather conditions change depending on distance from the equater. 
+                </p>    
+                <p>
+                    While this website mostly analyzes how temperature, humidity, clouds, and wind speeds
+                    vary throughout the world, correlation graphs of just the northern and southern hemispheres are available as well.
+                    Simply select "Plots <span class="far fa-chart-bar"></span>" and select "More Plots". Enjoy!
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <h3 style="text-align: center; padding: 0px">Plots</h3>
+            <p style="text-align: center;">(click a plot to explore more)</p>
+            <a href="temp.html">
+            <img  src="../Images/Lat_Temp.png" alt="Temperature Plot" class="center"></a>
+            <a href="humidity.html">
+            <img  src="../Images/Lat_Humidity.png" alt="Humidity Percentage Plot" class="center"></a>
+            <a href="clouds.html">
+            <img src="../Images/Lat_Clouds.png" alt="Cloud Percentage Plot" class="center"></a>
+            <a href="wind.html">
+            <img src="../Images/Lat_Wind.png" alt="Wind Speed Plot" class="center"></a>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
+
+</body>
+</html>

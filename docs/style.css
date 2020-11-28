@@ -7,6 +7,19 @@ nav {
     color: white!important;
 }
 
+.navbar.nav-pills > li > a {
+    color: #213e3b
+}
+
+li > div > a.dropdown-item.active{
+    background-color: #41a3a9!important;
+}
+
+/* .nav-pills .nav-item a.nav-link.dropdown-toggle:active .open .dropdown-toggle {
+    background-color:#41a3a9 !important; 
+    color:white !important;
+} */
+
 .header {
     overflow: visible;
     background-color: #a6f6f1;
@@ -35,20 +48,12 @@ nav {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     span.text {display: none};
     span.fas.fa-home {display: inline-block};
     span.far.fa-chart-bar {display: inline-block};
     span.fas.fa-compress-arrows-alt {display: inline-block};
     span.fas.fa-table {display: inline-block};
-}
-
-@media (min-width: 769px) {
-    span.text {display: inline-block};
-    span.fas.fa-home {display: none};
-    span.far.fa-chart-bar {display: none};
-    span.fas.fa-compress-arrows-alt {display: none};
-    span.fas.fa-table {display: none};
 }
 
 .center {
@@ -79,10 +84,6 @@ h3 {
 p {
     color: #213e3b;
     font-family: 'Roboto', sans-serif;
-}
-
-.navbar.nav-pills > li > a {
-    color: #213e3b
 }
 
 div.jumbotron {
@@ -122,19 +123,3 @@ tr:hover {
 tr:nth-child(even) {
     background-color: #41a3a9;
 }
-
-/* li.div.dropdown-menu.active {
-    background-color: #213e3b!important;
-}
-
-li.div.dropdown-menu.dropdown-item.active{
-    background-color: #213e3b!important;
-} */
-
-/* .box {
-    
-    width: 100%!important;
-    height: 50%!important;
-    border: 3px solid #213e3b!important;
-    overflow: auto!important;
-} */

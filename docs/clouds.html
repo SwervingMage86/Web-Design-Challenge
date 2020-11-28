@@ -13,26 +13,26 @@
 </head>
 
 <body style="background-color: #e8ffff;">
- 
+    
 <nav>
     <div class="header">
         <a href="index.html" class="logo">Exploring the Weather</a>
     <ul class="navbar nav-pills justify-content-end">
         <li class="nav-item">
-            <a class="nav-link active" href="index.html">
+            <a class="nav-link" href="index.html">
                 <span class="text">Home</span>
                 <span class="fas fa-home"></span>
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="text">Plots</span>
                 <span class="far fa-chart-bar"></span>
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item" href="temp.html">Temperature</a>
                 <a class="dropdown-item" href="humidity.html">Humidity Percentage</a>
-                <a class="dropdown-item" href="clouds.html">Cloud Percentage</a>
+                <a class="dropdown-item active" href="clouds.html">Cloud Percentage</a>
                 <a class="dropdown-item" href="wind.html">Wind Speed</a>
                 <a class="dropdown-item" href="moreplots.html">More Plots</a>
             </div>
@@ -53,39 +53,25 @@
     </div>
 </nav>
 
-<div class="container">     
+<div class="container"> 
     <div class="row">
         <div class="mx-auto">
-            <h1>Analyzing Weather by Latitude</h1>
+            <h1><strong>Cloud Percentage</strong></h1>
         </div>
-    </div>
+    </div> 
     <div class="row">
-        <div class="col-lg-10 md-11 col-sm-12">
-            <div class="short-div">
-                <a href="heatmap.html">
-                <img style="padding: 50px" class="resize center" src="../Images/HeatMap.png" alt="Heat Map"></a>
-            </div>
-            <div class="short-div">
-                <h3>Summary</h3>
-                <div class="jumbotron">
-                <p>
-                The purpose of this project is to anaylze weather data from cities all over the world to determine different trends based on latitude.
-                The four trends being looked at are temperature, humidity percentage, cloud percentage and wind speeds.
-                </p>
-                </div>
-            </div>
+        <div class="col-md-6 col-sm-12">
+            <a target="_blank" href="../Images/Lat_Clouds.png"></a>
+                <img src="../Images/Lat_Clouds.png" alt="Cloud Percentage Plot" class="center">
         </div>
-        <div class="col-lg-2 col-md-1 col-sm-12">
-            <h3 style="text-align: center; padding: 0px">Plots</h3>
-            <p style="text-align: center;">(click a plot to explore more)</p>
-            <a href="temp.html">
-            <img  src="../Images/Lat_Temp.png" alt="Temperature Plot" class="center"></a>
-            <a href="humidity.html">
-            <img  src="../Images/Lat_Humidity.png" alt="Humidity Percentage Plot" class="center"></a>
-            <a href="clouds.html">
-            <img src="../Images/Lat_Clouds.png" alt="Cloud Percentage Plot" class="center"></a>
-            <a href="wind.html">
-            <img src="../Images/Lat_Wind.png" alt="Wind Speed Plot" class="center"></a>
+        <div class="col-md-6 col-sm-12">
+            <div class="jumbotron">
+                <p><span class="fas fa-bolt">
+                    There seems to be no real correlation at all between latitude posistion and cloud cover.
+                    everywhere throughout the globe seems to have just as likely of chance to have a sunny day 
+                    or an overcast.
+                </span></p>
+            </div>
         </div>
     </div>
 </div>

@@ -25,11 +25,11 @@
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                 <span class="text">Plots</span>
                 <span class="far fa-chart-bar"></span>
             </a>
-            <div class="dropdown-menu">
+            <div class="dropdown-menu dropdown-menu-right">
                 <a class="dropdown-item active" href="temp.html">Temperature</a>
                 <a class="dropdown-item" href="humidity.html">Humidity Percentage</a>
                 <a class="dropdown-item" href="clouds.html">Cloud Percentage</a>
@@ -66,9 +66,19 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="jumbotron">
-                <p>
-                    This graph shows that the closer the latitude to the equater, the higher the temperature gets.
-                </p>
+                <p><span class="fas fa-bolt">
+                    The first, very noticeable, aspect of this graph is the nice arching curve that the data points create, peaking at 0 latitude(the equater).
+                    This should make sense as weather tends to be warmer near the equater at all times of year.
+                </span></p>
+                <p><span class="fas fa-bolt">
+                    The second thing I notice is that the northern hemisphere (above 0 latitude) has much more data points than the southern hemisphere (below 0 latitude).
+                    This says more cities were generated from the northern hemisphere which is likely due to a majority of cities in the world lie in the northern hemisphere.
+                </span></p>
+                <p><span class="fas fa-bolt">
+                    The last aspect of this graph is that the northern hemisphere tempuratures tend to be colder than its southern counterparts.
+                    This is likely because this data was pulled on November 22nd, meaning the tilt of the earth at this time of year leaves the northern
+                    hemisphere further away from the sun than the southern hemisphere, leading to the southern hemisphere being warmer.
+                </span></p>
                 </div>
             </div>
         </div>
